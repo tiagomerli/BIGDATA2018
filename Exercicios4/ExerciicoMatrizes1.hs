@@ -1,9 +1,8 @@
 --Exercicio Matrizes 1	
 {--Exercício 01: Faça uma função que gere uma matriz identidade de tamanho n.--}
 
-	
 matrizIdentidade :: Int -> [[Int]]
-matrizIdentidade n = [ [fromEnum $ i == j | i <- [1..n]] | j <- [1..n]]
+matrizIdentidade x = [ [fromEnum $ a == b | a <- [1..x]] | b <- [1..x]]
 
 main = do
   print ("---- Exercicio Matrizes 1 --------------")
